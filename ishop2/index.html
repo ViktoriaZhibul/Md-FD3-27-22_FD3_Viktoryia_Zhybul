@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Internet Shop</title>
+
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+
+    <script src="shop.js"></script>
+    <script src="product.js"></script>
+    <link rel="stylesheet" type="text/css" href="shop.css" />
+    <link rel="stylesheet" type="text/css" href="product.css" />
+
+
+  <script>
+    var shopName = "Green";
+    var productsArr = [ 
+      {code: 1, name: "Мука пшеничная", price: "3.74 pyб/шт", count: 320, img: "https://shop-static.green-market.by/138x138x2-1008314.jpg?id=6319&version=1"},
+      {code: 2, name: "Кукуруза", price: "3.59 pyб/шт", count: 150, img: "https://shop-static.green-market.by/138x138x2-1057171.jpg?id=100&version=3"}, 
+      {code: 3, name: "Виноград", price: "4.49 pyб/кг", count: 32, img: "https://shop-static.green-market.by/138x138x2-1450080-1601977820108.jpg?id=16749&version=3"},
+      {code: 4, name: "Манго", price: "5.99 pyб/кг", count: 55, img: "https://shop-static.green-market.by/138x138x2-1452262-1605692307289.jpg?id=19511&version=2"},
+      {code: 5, name: "Авокадо", price: "10.99 pyб/кг", count: 15, img: "https://shop-static.green-market.by/138x138x2-1453939-1623408828792.jpg?id=30743&version=1"} 
+    ];
+
+    ReactDOM.render(
+      React.createElement(InternetShop, {shop: shopName, products: productsArr}), 
+      document.getElementById("root") 
+    );
+    
+  </script>
+</body>
+
+</html>

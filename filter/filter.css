@@ -1,0 +1,11 @@
+.filter-wrapper{
+    margin: 25px auto;
+    width: 300px;
+}
+.filter-button{
+    margin: 10px;
+}
+.filter-texarea{
+    width: 83%;
+    height: 80px;
+}
