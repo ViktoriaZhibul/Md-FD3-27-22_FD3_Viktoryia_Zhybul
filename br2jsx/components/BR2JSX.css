@@ -1,0 +1,10 @@
+.br2jsx{
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    color: white;
+    background-color: darkslategrey;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
