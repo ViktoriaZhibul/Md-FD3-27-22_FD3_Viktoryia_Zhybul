@@ -1,0 +1,10 @@
+.wrapper__card{
+    width: 900px;
+    margin: auto;
+}
+:disabled{
+    background-color: grey;
+}
+span{
+    color: red;
+}

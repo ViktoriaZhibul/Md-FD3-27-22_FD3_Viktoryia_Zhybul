@@ -1,0 +1,29 @@
+﻿.table {
+  margin: auto;
+  table-layout: fixed;
+  width: 85%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+.table__caption{
+  font-size: 50px;
+  color: purple;
+  font-weight: bold;
+}
+
+.table__head{
+  line-height: 2;
+  font-size: 25px;
+  background-color: purple;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+}
+
+table + div{
+  width: 100px;
+  margin: auto;
+}
+
+

@@ -1,0 +1,7 @@
+[ 
+    {"code": 1, "name": "Мука пшеничная", "price": "3.74", "count": "320", "img": "https://shop-static.green-market.by/138x138x2-1008314.jpg?id=6319&version=1"},
+    {"code": 2, "name": "Кукуруза", "price": "3.59", "count": "150", "img": "https://shop-static.green-market.by/138x138x2-1057171.jpg?id=100&version=3"}, 
+    {"code": 3, "name": "Виноград", "price": "4.49", "count": "32", "img": "https://shop-static.green-market.by/138x138x2-1450080-1601977820108.jpg?id=16749&version=3"},
+    {"code": 4, "name": "Манго", "price": "5.99", "count": "55", "img": "https://shop-static.green-market.by/138x138x2-1452262-1605692307289.jpg?id=19511&version=2"},
+    {"code": 5, "name": "Авокадо", "price": "10.99", "count": "15", "img": "https://shop-static.green-market.by/138x138x2-1453939-1623408828792.jpg?id=30743&version=1"} 
+]
