@@ -92,11 +92,12 @@ class Shop extends React.Component {
 
   cteateNewProduct = () => {
     const arr = this.state.currentProducts;
-    let productCode = arr.findLast((el) => el.code === arr.length-1);
+    let productCode = arr.reduce((first, next) => first.code > next.code ? first.code : next.code);
+    productCode++;
     this.setState(
       {
         mode: 3,
-        lastProductCode: productCode.code,
+        lastProductCode: productCode,
       }
     );
   }
