@@ -8,7 +8,6 @@ class EditCard extends React.Component {
     static propTypes = {
         saveEditItem: PropTypes.func.isRequired,
         changeMode: PropTypes.func.isRequired,
-        //isDisabled: PropTypes.bool.isRequired,
         setDisabled: PropTypes.func.isRequired,
         item: PropTypes.shape({
             code: PropTypes.number.isRequired,
@@ -33,10 +32,10 @@ class EditCard extends React.Component {
 
     validForm = () => {
 
-        const imgError = this.state.img.includes("https") ? "" : "Неверно внесен путь к фото продукта";
-        const nameError = this.state.name.length ? "" : "Введите наименование продукта";
-        const priceError = (isNaN(this.state.price)) || (this.state.price === "") ? "Введите корректную стоимость товара" : "";
-        const countError = (isNaN(this.state.count)) || (this.state.count === "") ? "Введите корректную стоимость товара" : "";
+        const imgError = this.state.img.includes("https") ? null : "Неверно внесен путь к фото продукта";
+        const nameError = this.state.name.length ? null : "Введите наименование продукта";
+        const priceError = (isNaN(this.state.price)) || (this.state.price === "") ? "Введите корректную стоимость товара" : null;
+        const countError = (isNaN(this.state.count)) || (this.state.count === "") ? "Введите корректную стоимость товара" : null;
 
         this.setState({ imgError, nameError, priceError, countError })
 
@@ -82,7 +81,7 @@ class EditCard extends React.Component {
                     <input type="text" value={this.state.count} onChange={this.editCount} />
                     <span>{this.state.countError}</span>
                 </p>
-                <input className="table__btn" type="button" value="Save" disabled={(!!(this.state.imgError || this.state.nameError || this.state.priceError || this.state.countError))} onClick={() => this.props.saveEditItem({
+                <input className="table__btn" type="button" value="Save" disabled={(!!(this.state.imgError || this.state.nameError || this.state.priceError || this.state.countError||this.state.imgError==="" || this.state.nameError==="" || this.state.priceError==="" || this.state.countError===""))} onClick={() => this.props.saveEditItem({
                     code: this.state.code,
                     name: this.state.name,
                     count: this.state.count,

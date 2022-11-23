@@ -57,7 +57,7 @@ class Shop extends React.Component {
     const arr = this.state.currentProducts;
     if (this.state.mode === 2) {
       let index = arr.findIndex((el) => el.code === item.code);
-      let editCard = arr.splice(index, 1, item);
+      arr[index]=item;
     }
     if (this.state.mode === 3) {
       arr.push(item);
@@ -97,6 +97,7 @@ class Shop extends React.Component {
     this.setState(
       {
         mode: 3,
+        selectedProductCode: null,
         lastProductCode: productCode,
       }
     );
