@@ -1,0 +1,6 @@
+﻿.table__td{
+    text-align: center;
+    height: 30px;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
